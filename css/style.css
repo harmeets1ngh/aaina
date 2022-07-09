@@ -1,0 +1,187 @@
+body {
+  text-align: center;
+  background-color: #0f0d0d;
+  overflow-x: hidden;
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
+h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+hr {
+  margin: 0 auto;
+  color: #a7a7a7;
+  width: 90%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1d2d40;
+  filter: blur(15px) opacity(25%);
+}
+
+.background-image {
+  width: 100vw;
+}
+
+.link-container {
+  width: 400px;
+  margin: 40px auto 0;
+  -webkit-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.50);
+  -moz-box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.50);
+  box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.50);
+}
+
+.cover {
+  width: 400px;
+  border-radius: 10px 10px 0 0;
+}
+
+.player {
+  position: relative;
+}
+
+.audio-player {
+  width: 44px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-style: none;
+  border-radius: 100%;
+  transform: translate(-50%,-50%) scale(1.5);
+  padding: 10px 10px 10px 12px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.audio-player:hover {
+  background: rgba(25, 25, 25, 0.8);
+}
+
+.play-button {
+  color: #ffffff;
+  transform: scale(0.7);
+
+}
+
+.title {
+  color: #fff;
+  padding: 10px 0;
+  background-color: #10151b;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo-box {
+  max-height: 350px;
+  overflow-y: scroll;
+  background-color: #141a22;
+  scrollbar-width: thin;
+  scrollbar-color: #31353a #ffffff;
+}
+
+.ott-logo {
+  height: 25px;
+}
+
+
+
+  /* Chrome, Edge, and Safari */
+  .logo-box::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .logo-box::-webkit-scrollbar-track {
+    background: #ffffff transparent;
+  }
+
+  .logo-box::-webkit-scrollbar-thumb {
+    background-color: #31353a;
+    border-radius: 10px;
+    filter: opacity(50%);
+
+  }
+
+  .play {
+    font-family: 'Maven Pro', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+  }
+
+  .play:hover {
+    text-decoration: none;
+    color: #a7a7a7;
+  }
+
+.play-icon {
+  margin-right: 10px;
+  font-size: 0.8em;
+}
+
+.social-media {
+  padding: 20px;
+}
+
+.social-link {
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #ffffff;
+
+}
+
+.social-link:hover {
+  color: #a7a7a7;
+}
+
+@media screen and (max-width: 420px) {
+
+  body {
+    height: auto;
+    overflow: auto;
+    background-color: #243348;
+  }
+
+  .cover {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .link-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo-box {
+    max-height: none;
+    overflow-y: auto;
+    background-color: #141a22;
+  }
+
+
+
+
+}
